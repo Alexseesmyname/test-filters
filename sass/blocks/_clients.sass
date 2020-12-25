@@ -1,0 +1,95 @@
+.clients
+    &__container
+        position: relative
+        width: 1920px
+        padding: 84px 0 96px
+        &::after
+            content: ""
+            position: absolute
+            bottom: 255px
+            left: 0
+            width: 675px
+            height: 325px
+            background-color: #f1f1f1
+            box-shadow: 0 18px 56px 1px rgba(174, 174, 174, 0.1)
+    &__bg-dots
+        position: absolute
+        left: 74px
+        top: 248px
+        z-index: 1
+        width: 290px
+        height: 360px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 1138px
+        margin: 0 auto
+    &__title
+        width: 700px
+        margin: 0 0 21px
+        font-weight: 900
+        font-size: 40px
+        line-height: 54px
+        text-transform: uppercase
+        color: #22354a
+    &__label
+        position: relative
+        width: 303px
+        margin: 0 0 21px
+        padding: 16px 40px 10px 76px
+        font-weight: 800
+        font-size: 20px
+        line-height: 30px
+        text-align: right
+        text-transform: uppercase
+        color: #5f8cc7
+        border: 1px solid #f1f1f1
+        border-radius: 0 5px
+        background-color: #fafafa
+        &::before
+            content: url(../img/top-angle.svg)
+            position: absolute
+            top: -14px
+            left: 0
+        &::after
+            content: url(../img/bottom-angle.svg)
+            position: absolute
+            right: 0
+            bottom: -8px
+    .slider
+        padding: 50px 0
+        &__slide
+            display: flex
+            margin-bottom: 40px
+            align-items: center
+            justify-content: space-around
+            max-width: 1138px
+            min-width: 1138px
+        &__item-wrapper
+            position: relative
+            width: 358px
+            height: 502px
+            border-radius: 5px
+            box-shadow: 0 18px 56px 1px rgba(174, 174, 174, 0.71)
+            overflow: hidden
+            margin-right: 30px
+            text-decoration: none
+            &:last-child
+                margin-right: 0
+            &::after
+                content: ""
+                position: absolute
+                top: 0
+                right: 0
+                bottom: 0
+                left: 0
+                background-color: rgba(34, 53, 74, 0.5)
+                background-image: url(../img/zoom-in.png)
+                background-repeat: no-repeat
+                background-position: center
+                display: none
+        &__item
+            width: 100%
+            height: 100%
+            object-fit: cover

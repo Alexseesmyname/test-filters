@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jquery.fancybox.min.js" defer></script>
+    <script src="js/swiper-bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <svg class="header__bg-arrow">
+          <use xlink:href="img/sprite.svg#arrow-to-bottom"></use>
+        </svg>
+        <svg class="header__bg-stars">
+          <use xlink:href="img/sprite.svg#bg-stars"></use>
+        </svg>
+        <svg class="header__bg-dots_left">
+          <use xlink:href="img/sprite.svg#left-dots"></use>
+        </svg>
+        <svg class="header__bg-lines">
+          <use xlink:href="img/sprite.svg#lines"></use>
+        </svg>
+        <svg class="header__bg-dots_right">
+          <use xlink:href="img/sprite.svg#right-dots"></use>
+        </svg>
+        <img src="img/bg-img.png" alt="Image" class="header__bg-img" />
+        <div class="header__top-inner">
+          <div class="header__logo-wrapper">
+            <img src="img/logo.png" alt="Логотип" />
+          </div>
+          <!-- /.header__logo-wrapper -->
+          <div class="header__info-wrapper">
+            <div class="info header__info">
+              <div class="info__icon-wrapper">
+                <img class="info__icon" src="img/email.png" alt="Иконка" />
+              </div>
+              <a class="info__link" href="mailto:info@compressorua.com"
+                >info@compressorua.com</a
+              >
+            </div>
+            <div class="info header__info">
+              <div class="info__icon-wrapper">
+                <img
+                  class="info__icon"
+                  src="img/phone-number.png"
+                  alt="Иконка"
+                />
+              </div>
+              <a class="info__link" href="tel:050-345-4030"
+                >050&nbsp;345&nbsp;4030</a
+              >
+            </div>
+            <div class="info header__info">
+              <div class="info__icon-wrapper">
+                <img
+                  class="info__icon"
+                  src="img/phone-number.png"
+                  alt="Иконка"
+                />
+              </div>
+              <a class="info__link" href="tel:067-535-4030"
+                >067&nbsp;535&nbsp;4030</a
+              >
+            </div>
+          </div>
+          <!-- /.header__info-wrapper -->
+        </div>
+        <!-- /.header__top-inner -->
+        <div class="header__bottom-inner">
+          <div class="header__content-wrapper">
+            <h1 class="header__title title">
+              <span class="title__first-word">Безошибочный</span> подбор
+              фильтров к&nbsp;компрессорам
+            </h1>
+            <div class="features header__features">
+              <span class="features__item">3 варианта на любой бюджет!</span>
+              <span class="features__item">Всего за 15 минут!</span>
+              <span class="features__item"
+                >С консультацией сервис-инженера!</span
+              >
+            </div>
+          </div>
+          <!-- /.header__content-wrapper -->
+          <form
+            action="send.php"
+            enctype="multipart/form-data"
+            method="POST"
+            class="form header__form"
+            onsubmit="send(event, 'send.php')"
+          >
+            <div class="form__close-button">
+              <svg viewBox="0 0 17 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.414 8l6.243-6.23a1.034 1.034 0 0 0 0-1.466 1.04 1.04 0 0 0-1.468 0l-6.244 6.23L2.702.304a1.04 1.04 0 0 0-1.469 0 1.034 1.034 0 0 0 0 1.466L7.477 8l-6.244 6.23a1.037 1.037 0 1 0 1.469 1.466l6.243-6.23 6.244 6.23a1.037 1.037 0 0 0 1.468 0 1.034 1.034 0 0 0 0-1.466L10.414 8z"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="form__title">Подобрать фильтр</h2>
+            <div class="form__input-group">
+              <input
+                type="text"
+                class="photo form__input"
+                placeholder="Фото компрессора"
+                name="photo"
+              />
+              <input
+                type="file"
+                name="myfile[]"
+                id="myfile"
+                multiple
+                class="file form__input"
+              />
+              <label for="myfile" class="form__label label">
+                <img class="label__icon" src="img/upload.png" alt="Иконка" />
+              </label>
+            </div>
+            <input
+              type="text"
+              class="code form__input"
+              placeholder="Код фильтра"
+              name="code"
+            />
+            <input
+              type="text"
+              class="name form__input"
+              placeholder="Ваше имя"
+              name="name"
+            />
+            <input
+              type="text"
+              class="phone form__input"
+              placeholder="Телефон для связи"
+              name="phone"
+            />
+            <button class="form__button button">Отправить</button>
+          </form>
+          <button class="button header__button call-form-button">
+            Подобрать фильтр
+          </button>
+        </div>
+        <!-- /.header__bottom-inner -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <section class="clients">
+      <div class="container clients__container">
+        <svg class="clients__bg-dots">
+          <use xlink:href="img/sprite.svg#clients-dots"></use>
+        </svg>
+        <div class="clients__inner">
+          <h2 class="clients__title">
+            нам доверяют тысячи украинскиих предприятий
+          </h2>
+          <span class="clients__label">90% в наличии на складе</span>
+        </div>
+        <div class="clients__slider slider swiper-container">
+          <div class="slider__slide-wrapper swiper-wrapper">
+            <div class="slide slider__slide swiper-slide">
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+            </div>
+            <!-- /.slide slider__slide swiper-slide -->
+            <div class="slide slider__slide swiper-slide">
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+            </div>
+            <!-- /.slide slider__slide swiper-slide -->
+            <div class="slide slider__slide swiper-slide">
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+            </div>
+            <!-- /.slide slider__slide swiper-slide -->
+            <div class="slide slider__slide swiper-slide">
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+            </div>
+            <!-- /.slide slider__slide swiper-slide -->
+            <div class="slide slider__slide swiper-slide">
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+            </div>
+            <!-- /.slide slider__slide swiper-slide -->
+            <div class="slide slider__slide swiper-slide">
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+              <a href="img/l1.jpg" class="slider__item-wrapper" data-fancybox>
+                <img
+                  src="img/image.png"
+                  alt="Изображение"
+                  class="slider__item"
+                />
+              </a>
+            </div>
+            <!-- /.slide slider__slide swiper-slide -->
+          </div>
+          <!-- /.slider__slide-wrapper swiper-wrapper -->
+          <div class="slider__pagination swiper-pagination"></div>
+          <button class="slider__button swiper-button-prev button"></button>
+          <button class="slider__button swiper-button-next button"></button>
+        </div>
+        <!-- /.clients__slider slider swiper-container -->
+      </div>
+      <!-- /.container clients__container -->
+    </section>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+.header
+    position: relative
+    background-color: #000000
+    height: 950px
+    background-image: url(../img/bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 71%
+        background-color: rgba(95, 140, 199, 0.1)
+    &__container
+        position: relative
+        z-index: 5
+        height: 100%
+        padding-top: 10px
+    &__top-inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 134px
+    &__info-wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 54%
+    .info
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__icon-wrapper
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 20px
+            height: 20px
+            margin-right: 10px
+        &__link
+            font-weight: 600
+            font-size: 17px
+            line-height: 30px
+            text-decoration: none
+            color: #ffffff
+    &__bottom-inner
+        display: flex
+        justify-content: space-between
+    &__content-wrapper
+        flex-basis: 58%
+        display: flex
+        flex-direction: column
+    &__title
+        position: relative
+        z-index: 2
+        margin: 23px 0 45px
+        font-weight: 900
+        font-size: 58px
+        line-height: 72px
+        text-transform: uppercase
+        color: #ffffff
+        .title__first-word
+            color: #5f8cc7
+    .features
+        position: relative
+        z-index: 2
+        align-self: flex-end
+        display: flex
+        flex-direction: column
+        &::before
+            content: url(../img/top-angle.svg)
+            position: absolute
+            left: 0
+            top: -7px
+        &::after
+            content: url(../img/bottom-angle.svg)
+            position: absolute
+            right: 0
+            bottom: 0
+        &__item
+            width: max-content
+            margin: 0 0 4px
+            padding: 0 21px
+            font-weight: 600
+            font-size: 17px
+            line-height: 35px
+            color: #ffffff
+            border-radius: 5px
+            background-color: rgba(0,0,0,0.4)
+    &__form
+        z-index: 1
+        display: flex
+        flex-direction: column
+        width: 389px
+        padding: 25px 29px 53px
+        background-color: #ffffff
+        border-radius: 5px
+        box-shadow: 0 49px 56px 1px rgba(34, 53, 74, 0.2)
+    .form
+        &__close-button
+            fill: #ff9311
+            position: absolute
+            z-index: 99
+            top: 15px
+            right: 15px
+            width: 30px
+            height: 30px
+            display: none
+        &__title
+            margin: 0
+            font-weight: 900
+            font-size: 22px
+            line-height: 72px
+            text-align: center
+            text-transform: uppercase
+            color: #22354a
+        &__input-group
+            position: relative
+        &__input
+            width: 100%
+            margin: 0 0 10px
+            padding: 16px 46px
+            font-weight: normal
+            font-size: 13px
+            line-height: 21px
+            border: 1px solid #f1f1f1
+            border-radius: 5px
+            background-color: #f5f5f5
+        &__label
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 10px
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 50px
+            cursor: pointer
+        .photo
+            width: 100%
+            padding: 16px 55px 16px 46px
+            background-image: url(../img/photo.png)
+            background-repeat: no-repeat
+            background-position: left 20px center
+        .file
+            position: absolute
+            width: 0.1px
+            height: 0.1px
+            overflow: hidden
+            opacity: 0
+            z-index: -1
+        .code
+            background-image: url(../img/code.png)
+            background-repeat: no-repeat
+            background-position: left 22px center
+        .name
+            background-image: url(../img/name.png)
+            background-repeat: no-repeat
+            background-position: left 24px center
+        .phone
+            margin-bottom: 21px
+            background-image: url(../img/phone.png)
+            background-repeat: no-repeat
+            background-position: left 24px center
+        &__button
+            padding: 17px 118px
+            font-weight: 800
+            font-size: 14px
+            line-height: 21px
+            text-transform: uppercase
+            color: #ffffff
+            border: 0
+            border-radius: 5px
+            background-color: #ff9311
+            box-shadow: 0 24px 29px rgba(223, 122, 0, 0.34)
+        &__hidden
+            display: block
+            position: fixed
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: 99
+    &__button
+        position: absolute
+        top: 70%
+        left: 0
+        z-index: 2
+        display: none
+        height: max-content
+        padding: 20px 40px
+        font-weight: 800
+        font-size: 21px
+        line-height: 30px
+        text-transform: uppercase
+        color: #ffffff
+        border: 0
+        border-radius: 5px
+        background-color: #ff9311
+    &__bg-lines
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        width: 100%
+        height: 100%
+    &__bg-stars
+        position: absolute
+        top: 18px
+        bottom: 0
+        right: 0
+        left: -14px
+        width: 1168px
+        height: 100%
+    &__bg-dots
+        &_left
+            position: absolute
+            top: 153px
+            left: -193px
+            width: 335px
+            height: 500px
+        &_right
+            position: absolute
+            top: 476px
+            right: -195px
+            width: 335px
+            height: 359px
+    &__bg-arrow
+        position: absolute
+        bottom: 50px
+        left: 50%
+        transform: translateX(-50%)
+        width: 25px
+        height: 39px
+    &__bg-img
+        position: absolute
+        bottom: -23px
+        left: -179px

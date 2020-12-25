@@ -1,0 +1,275 @@
+@media (pointer:fine) and ( min-width: 992px )
+    .clients
+        .slider
+            &__item-wrapper:hover::after
+                display: block
+
+@media ( max-width: 1919px )
+    .clients
+        &__container
+            width: 100%
+        .swiper-button
+            &-prev
+                left: 15%
+            &-next
+                right: 15%
+
+@media   ( max-width: 1705px )
+    .clients
+        .swiper-button
+            &-prev
+                left: 10%
+            &-next
+                right: 10%
+
+@media   ( max-width: 1485px )
+    .header
+        &__bg-img
+            bottom: 22px
+            left: 215px
+        .features
+            align-self: flex-start
+    .clients
+        .swiper-button
+            &-prev
+                left: 5%
+            &-next
+                right: 5%
+
+@media   ( max-width: 1325px )
+    .clients
+        .swiper-button
+            &-prev
+                left: 2%
+            &-next
+                right: 2%
+
+@media   ( max-width: 1280px )
+    .container
+        width: 90%
+    .header
+        &__bg-img
+            bottom: 80px
+            left: 370px
+            width: 800px
+        &__info-wrapper
+            width: 613px
+        &__content-wrapper
+            flex-basis: auto
+            width: 660px
+        &__form
+            display: none
+        .form
+            &__close-button
+                display: block
+        &__button
+            display: block
+    .clients
+        &__container
+            width: 100%
+        &__inner
+            width: 90%
+
+@media ( max-width: 1150px )
+    .header
+        &__bg-img
+            width: 700px
+    .clients
+        &__inner
+            flex-direction: column
+            align-items: flex-start
+        &__label
+            align-self: flex-end
+        .slider
+            &__slide
+                min-width: 100%
+            &__item-wrapper
+                margin-right: 0
+                &:last-child
+                    display: none
+        .swiper-slide-next
+            opacity: 1
+        .swiper-slide-prev
+            opacity: 1
+        &__bg-dots
+            top: 350px
+@media ( max-width: 1050px )
+    .header
+        &__bg-img
+            bottom: 110px
+            width: 600px
+
+@media  ( max-width: 992px )
+    .header
+        &__bg-img
+            width: 800px
+            bottom: 0px
+            left: 100px
+
+@media ( max-width: 930px )
+    .header
+        &__info-wrapper
+            flex-direction: column
+            align-items: flex-end
+
+@media ( max-width: 860px )
+    .header
+        &::after
+            display: none
+        &__top-inner
+            margin-bottom: 114px
+        &__bg-img
+            width: 100%
+            left: 50px
+            bottom: 20px
+    .clients
+        &__container
+            &::after
+                bottom: 300px
+                width: 100%
+        .slider
+            &__slide
+                flex-direction: column
+            &__item-wrapper
+                margin-bottom: 30px
+                &:nth-child(2)
+                    display: none
+        .swiper-button
+            &-prev
+                left: 10%
+            &-next
+                right: 10%
+
+@media ( max-width: 780px )
+    .header
+        &__content-wrapper
+            width: 100%
+        &__title
+            font-size: 50px
+    .clients
+        &__title
+            width: 100%
+            font-size: 35px
+
+@media ( max-width: 720px )
+    .clients
+        &__title
+            font-size: 30px
+        .swiper-button
+            &-prev
+                left: 7%
+            &-next
+                right: 7%
+
+@media ( max-width: 650px )
+    .header
+        &__top-inner
+            flex-direction: row
+            align-items: center
+            margin-bottom: 100px
+        &__info
+            margin-bottom: 5px
+        &__title
+            font-size: 45px
+            line-height: 60px
+        &__button
+            top: 65%
+        &__bg-img
+            width: 110%
+            left: 0
+            bottom: 30px
+
+@media ( max-width: 580px )
+    .header
+        &__title
+            font-size: 40px
+            line-height: 55px
+        &__button
+            top: 63%
+    .clients
+        &__title
+            font-size: 26px
+        .swiper-pagination-fraction
+            font-size: 26px
+
+@media ( max-width: 510px )
+    .header
+        &__title
+            font-size: 35px
+        &__button
+            font-size: 19px
+        &__bg-img
+            bottom: 50px
+    .clients
+        &__title
+            font-size: 23px
+        .swiper-pagination-fraction
+            font-size: 23px
+
+@media ( max-width: 450px )
+    .header
+        &__top-inner
+            flex-direction: column
+            align-items: flex-start
+            margin-bottom: 60px
+        &__logo-wrapper
+            margin-bottom: 20px
+        &__info-wrapper
+            align-items: flex-start
+        &__title
+            font-size: 30px
+            line-height: 43px
+        .features
+            &__item
+                font-size: 15px
+        &__form
+            width: 100%
+        .form
+            &__title
+                font-size: 21px
+            &__button
+                width: 100%
+                padding: 17px 46px
+        &__button
+            top: 68%
+            width: 100%
+            font-size: 17px
+    .clients
+        &__title
+            font-size: 18px
+            line-height: 34px
+        &__label
+            width: 275px
+            font-size: 16px
+        .slider
+            &__item-wrapper
+                &:nth-child(2)
+                    display: none
+        .swiper-pagination-fraction
+            font-size: 18px
+
+@media ( max-width: 380px )
+    .header
+        height: 950px
+        .info__link
+            font-size: 14px
+        &__title
+            font-size: 25px
+            line-height: 37px
+        .features
+            &__item
+                font-size: 13px
+        &__bg-img
+            bottom: 60px
+        &__button
+            top: 65%
+    .clients
+        overflow: hidden
+        &__container
+            padding: 54px 0 66px
+        .slider
+            &__slide
+                padding: 0 10px
+            &__item-wrapper
+                width: 100%
+                height: auto
